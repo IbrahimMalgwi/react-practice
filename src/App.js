@@ -1,35 +1,37 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const firstName = "John";
-  const lastName = "Wick";
-  const age = 56;
-  const Job = "actor";
-
-  const mArr = [1, 2, 3, 4, 5,]
-  
-  const inputPlaceholder = "Enter your details"
-
-  const getFullName = (firstName, lastName) => {
-    return `${firstName} ${lastName}`
+  const blogObj = {
+    title: "Blog Title 1",
+    description: "Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor"
   }
-
-  const detailsInputBox = <input placeholder={inputPlaceholder} autoComplete />;
+ 
+  // const styles = {
+  //         margin: "16px",
+  //         padding: "16px",
+  //         boxSizing: "border-box",
+  //         borderRadius: "5px",  
+  //         boxShadow: "0 2px 5px #ccc"
+  // }
 
   return (
     <div className="App">
-      
-       <h1>First Name: {getFullName(firstName, lastName)}</h1>
-      
-       <p>Age: {age}</p>
-       <p>Job: {Job}</p>
+      <div className="BlogCard">      
+        <h3>{blogObj.title}</h3>
+        <p>{blogObj.description}</p>
+      </div>  
 
-       {detailsInputBox}
-
-       {mArr[0]}
+      <div className="BlogCard">
+        <h3>{blogObj.title}</h3>
+        <p>{blogObj.description}</p>
+      </div>
       
-    </div>
+      <div className="BlogCard">
+        <h3>{blogObj.title}</h3>
+        <p>{blogObj.description}</p>
+      </div>
+      </div>
   );
 }
 
