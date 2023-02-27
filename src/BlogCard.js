@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import { dumpLogs } from "./utils";
 
 const BlogCard = (props) => {
     console.log(props)
